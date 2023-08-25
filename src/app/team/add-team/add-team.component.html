@@ -1,0 +1,26 @@
+<h2>Lista de Equipos</h2>
+<ul>
+  <li *ngFor="let team of teams">
+    {{ team.name }} ({{ team.abbreviation }}) - {{ team.city }} - {{ team.conference }} - {{ team.division }}
+  </li>
+</ul>
+
+<h2>Agregar Equipo</h2>
+<form (ngSubmit)="addTeam()">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" [(ngModel)]="newTeam.name" name="name" required>
+
+  <label for="abbreviation">Abreviatura:</label>
+  <input type="text" id="abbreviation" [(ngModel)]="newTeam.abbreviation" name="abbreviation" required>
+
+  <label for="city">Ciudad:</label>
+  <input type="text" id="city" [(ngModel)]="newTeam.city" name="city" required>
+
+  <label for="conference">Conferencia:</label>
+  <input type="text" id="conference" [(ngModel)]="newTeam.conference" name="conference" required>
+
+  <label for="division">División:</label>
+  <input type="text" id="division" [(ngModel)]="newTeam.division" name="division" required>
+
+  <button type="submit">Agregar</button>
+</form>

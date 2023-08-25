@@ -1,0 +1,78 @@
+/* team.component.css */
+
+/* Estilos generales */
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para la lista de equipos */
+  ul {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el formulario de agregar equipo */
+  form {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos específicos para un enfoque deportivo */
+  :host {
+    background-color: #fff;
+  }
+  
+  ul {
+    border: 2px solid #007bff;
+  }
+  
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  /* Agrega estilos específicos según tus preferencias */
+  
